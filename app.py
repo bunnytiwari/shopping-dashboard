@@ -13,7 +13,7 @@ st.set_page_config(page_title="Sales Dashboard",
                    layout="wide")
 
 
-df = pd.read_csv("C:/Users/shrad/OneDrive/Desktop/App/data/shopping_trends.csv")
+df = pd.read_csv("shopping_trends.csv")
 
 selected=st.sidebar.radio('select one',["Data", "Charts", "summary"])
 
@@ -23,7 +23,7 @@ if selected=="Data":
     st.title("DATA Description")
     st.markdown("This dataset encompasses various features related to customer shopping preferences, gathering essential information for businesses seeking to enhance their understanding of their customer base. The features include customer age, gender, purchase amount, preferred payment methods, frequency of purchases, and feedback ratings. Additionally, data on the type of items purchased, shopping frequency, preferred shopping seasons, and interactions with promotional offers is included. With a collection of 3900 records, this dataset serves as a foundation for businesses looking to apply data-driven insights for better decision-making and customer-centric strategies")
     st.subheader("DATA")
-    df = pd.read_csv("C:/Users/shrad/OneDrive/Desktop/App/data/shopping_trends.csv")
+    df = pd.read_csv("shopping_trends.csv")
     df
     st.image("jjj.gif") 
     
